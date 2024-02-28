@@ -1,18 +1,90 @@
 <HTML>
 	<HEAD>
 		<TITLE>marenfoal</TITLE>
-		<META name="generator" content="Adobe Photoshop(R) 6.0 Web Photo Gallery">
-		<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<style>
+			/* Style the navbar */
+				#navbar {
+				  overflow: hidden;
+				  background-color: #333;
+				}
+				
+				/* Navbar links */
+				#navbar a {
+				  float: left;
+				  display: block;
+				  color: #f2f2f2;
+				  text-align: center;
+				  padding: 14px;
+				  text-decoration: none;
+				}
+				
+				/* Page content */
+				.content {
+				  padding: 16px;
+				}
+				
+				/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+				.sticky {
+				  position: fixed;
+				  top: 0;
+				  width: 100%;
+				}
+				
+				/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+				.sticky + .content {
+				  padding-top: 60px;
+				}
+			</style>
 	</HEAD>
 
 <BODY bgcolor="#F5E2C1"  text="#000000"  link="#1B9A2A"  vlink="#1B9A2A" >
+	<div id="navbar">
+		<a href="../index.html">Home</a>
+		<a href="other.html">Other</a>
+		<a href="mailto:ianshaunt@yahoo.com">Contact</a>
+	  </div>
+	  <table border="0" cellspacing="2" cellpadding="0">
+		<tr>
+<!-- Thumbnails with hyperlinks -->
 
-<TABLE border="0" cellpadding="5" cellspacing="2" width="100%" bgcolor="#B8B4B4" >
-<TR>
-	<TD><FONT size="3"  face="Arial" >Ian Styer Artwork / marenfoal<BR><BR>5/3/2005</FONT>
-	</TD>
-</TR>
-</TABLE>
+<td> &nbsp; 
+<A href="apple.html" target="Top Frame"><IMG src="../thumbnails/apple.jpg" border="0" alt=apple align="BOTTOM"></A>
+</td>	<!-- Thumbnails with hyperlinks -->
+
+<td> &nbsp; 
+<A href="Gomez.html" target="Top Frame"><IMG src="../thumbnails/Gomez.jpg" border="0" alt=Gomez align="BOTTOM"></A>
+</td>	<!-- Thumbnails with hyperlinks -->
+
+<td> &nbsp; 
+<A href="Homer.html" target="Top Frame"><IMG src="../thumbnails/Homer.jpg" border="0" alt=Homer align="BOTTOM"></A>
+</td>	<!-- Thumbnails with hyperlinks -->
+
+<td> &nbsp; 
+<A href="Mare.html" target="Top Frame"><IMG src="../thumbnails/Mare.jpg" border="0" alt=Mare align="BOTTOM"></A>
+</td>	<!-- Thumbnails with hyperlinks -->
+
+<td> &nbsp; 
+<A href="marenfoal.html" target="Top Frame"><IMG src="../thumbnails/marenfoal.jpg" border="0" alt=marenfoal align="BOTTOM"></A>
+</td>	<!-- Thumbnails with hyperlinks -->
+
+<td> &nbsp; 
+<A href="stallion.html" target="Top Frame"><IMG src="../thumbnails/stallion.jpg" border="0" alt=stallion align="BOTTOM"></A>
+</td>  </tr>
+</table>
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
 
 <P><CENTER><IMG src="../images/marenfoal.jpg"  border="0" alt=marenfoal></CENTER></P>
 <P><CENTER><FONT size="3"  face="Arial" ></FONT></CENTER></P>
